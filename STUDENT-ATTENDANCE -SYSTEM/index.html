@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Management System</title>
+
+    <link rel="stylesheet" href="css/login.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="login-container">
+
+        <div class="logo">
+            <i class="fa-solid fa-user-graduate"></i>
+        </div>
+
+        <h1>Student Attendance</h1>
+        <h3>Management System</h3>
+
+        <form id="loginForm">
+
+            <div class="input-box">
+                <i class="fa-solid fa-users"></i>
+                <select id="loginType" required>
+                    <option value="admin">Admin Login</option>
+                    <option value="student">Student Login</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input 
+                    type="text" 
+                    id="username" 
+                    placeholder="Enter Username / Roll No" 
+                    autocomplete="off" 
+                    required>
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input 
+                    type="password" 
+                    id="password" 
+                    placeholder="Enter Password" 
+                    required>
+                <span id="togglePassword">
+                    <i class="fa-solid fa-eye"></i>
+                </span>
+            </div>
+
+            <div class="options">
+                <label>
+                    <input type="checkbox"> Remember Me
+                </label>
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <button class="login-btn" type="submit">
+                <i class="fa-solid fa-right-to-bracket"></i> Login
+            </button>
+
+            <p id="error"></p>
+
+        </form>
+
+        <hr style="margin:20px 0; opacity:.3;">
+
+        <div style="color:white; font-size:14px; line-height:1.8; text-align: left; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 12px;">
+            <p style="text-align: center; font-weight: 600; margin-bottom: 10px; color: #4da3ff;">
+                Demo Login Credentials
+            </p>
+            
+            <p><strong>👨‍💼 Admin</strong></p>
+            <p style="padding-left: 15px; opacity: 0.9;">Username: admin</p>
+            <p style="padding-left: 15px; opacity: 0.9; margin-bottom: 10px;">Password: admin123</p>
+
+            <p><strong>👨‍🎓 Student</strong></p>
+            <p style="padding-left: 15px; opacity: 0.9;">Roll No: 23CSE001</p>
+            <p style="padding-left: 15px; opacity: 0.9;">Password: rahul123</p>
+        </div>
+
+        <div class="footer">
+            © 2026 Student Attendance Management System
+        </div>
+
+    </div>
+
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>

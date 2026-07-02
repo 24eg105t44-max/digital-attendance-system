@@ -1,0 +1,101 @@
+@media screen and (max-width: 1024px) {
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .main {
+        margin-left: 200px;
+        padding: 20px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        min-width: 45%;
+        margin-bottom: 15px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* Sidebar becomes top menu */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sidebar ul li {
+        flex: 1;
+        text-align: center;
+    }
+
+    .main {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .topbar {
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .login-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .logo i {
+        font-size: 40px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    input,
+    select,
+    button {
+        font-size: 14px;
+    }
+
+    .sidebar ul li a {
+        font-size: 12px;
+        padding: 10px;
+    }
+}

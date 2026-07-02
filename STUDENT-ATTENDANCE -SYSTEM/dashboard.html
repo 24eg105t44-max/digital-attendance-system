@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Student Attendance Management System</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- ================= SIDEBAR ================= -->
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-user-graduate"></i>
+
+        <h2>SAMS</h2>
+
+    </div>
+
+    <ul>
+
+        <li class="active">
+            <a href="dashboard.html">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+        </li>
+
+        <li>
+            <a href="students.html">
+                <i class="fa-solid fa-users"></i>
+                Students
+            </a>
+        </li>
+
+        <li>
+            <a href="attendance.html">
+                <i class="fa-solid fa-calendar-check"></i>
+                Attendance
+            </a>
+        </li>
+
+        <li>
+            <a href="report.html">
+                <i class="fa-solid fa-chart-column"></i>
+                Reports
+            </a>
+        </li>
+
+        <li id="logoutBtn">
+            <a href="#">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+<!-- ================= MAIN ================= -->
+
+<div class="main">
+
+    <!-- Topbar -->
+
+    <div class="topbar">
+
+        <h1>Student Attendance Dashboard</h1>
+
+        <div class="profile">
+
+            <i class="fa-solid fa-user-circle"></i>
+
+            <span id="adminName">Admin</span>
+
+        </div>
+
+    </div>
+
+    <!-- Cards -->
+
+    <div class="cards">
+
+        <div class="card blue">
+
+            <i class="fa-solid fa-users"></i>
+
+            <h2 id="totalStudents">0</h2>
+
+            <p>Total Students</p>
+
+        </div>
+
+        <div class="card green">
+
+            <i class="fa-solid fa-user-check"></i>
+
+            <h2 id="presentStudents">0</h2>
+
+            <p>Present</p>
+
+        </div>
+
+        <div class="card red">
+
+            <i class="fa-solid fa-user-xmark"></i>
+
+            <h2 id="absentStudents">0</h2>
+
+            <p>Absent</p>
+
+        </div>
+
+        <div class="card orange">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <h2 id="attendancePercentage">0%</h2>
+
+            <p>Attendance</p>
+
+        </div>
+
+    </div>
+
+    <!-- Information Section -->
+
+    <div class="content">
+
+        <div class="welcome">
+
+            <h2>Welcome 👋</h2>
+
+            <p>
+                Manage student records and attendance easily using
+                this Student Attendance Management System.
+            </p>
+
+        </div>
+
+        <div class="datetime">
+
+            <h3>Today's Date</h3>
+
+            <h2 id="currentDate"></h2>
+
+            <br>
+
+            <h3>Current Time</h3>
+
+            <h2 id="currentTime"></h2>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

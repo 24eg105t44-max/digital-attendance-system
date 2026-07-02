@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Fallback background-color prevents an invisible white-on-white screen if background.jpg fails to load */
+    background-color: #4a4a4a; 
+    background: url("../images/background.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 0;
+}
+
+/* =========================
+   DATE & TIME
+========================= */
+
+.datetime-box {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: 5;
+    background: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 12px;
+    padding: 12px 18px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
+}
+
+#currentDate {
+    font-size: 13px;
+    opacity: .9;
+}
+
+#currentTime {
+    font-size: 24px;
+    font-weight: 700;
+    color: #4da3ff;
+}
+
+/* =========================
+   LOGIN CONTAINER
+========================= */
+
+.login-container {
+    position: relative;
+    z-index: 1;
+    width: 420px;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .35);
+    text-align: center;
+    animation: fadeIn .9s ease;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 42px;
+    color: #0d6efd;
+}
+
+.login-container h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.login-container h3 {
+    color: #ddd;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.login-title {
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.login-title i {
+    color: #4da3ff;
+    margin-right: 8px;
+}
+
+/* =========================
+   INPUT FIELDS
+========================= */
+
+.input-box {
+    position: relative;
+    margin: 18px 0;
+}
+
+.input-box input,
+.input-box select {
+    width: 100%;
+    padding: 15px 45px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 15px;
+    background: rgba(255, 255, 255, .9);
+    color: #333333;
+}
+
+/* Custom styling to keep the clean drop-down arrow looking professional */
+.input-box select {
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23555' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 14px;
+}
+
+.input-box i:first-child {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+    z-index: 2;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555;
+    z-index: 2;
+}
+
+/* =========================
+   OPTIONS & BUTTONS
+========================= */
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.options label {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.options label input {
+    accent-color: #0d6efd;
+}
+
+.options a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #0d6efd;
+    color: #fff;
+    transition: .4s;
+}
+
+.login-btn:hover {
+    background: #084db5;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+}
+
+/* =========================
+   SIGNUP BUTTON
+========================= */
+
+.signup-box {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+.signup-btn {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 30px;
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.signup-btn:hover {
+    background: #218838;
+    transform: translateY(-2px);
+}
+
+#error {
+    margin-top: 15px;
+    color: #ffb3b3;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer {
+    color: #ddd;
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+/* =========================
+   ANIMATIONS & RESPONSIVENESS
+========================= */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width:500px) {
+    .login-container {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    .login-container h1 {
+        font-size: 24px;
+    }
+
+    .datetime-box {
+        top: 10px;
+        right: 10px;
+        padding: 10px 12px;
+    }
+
+    #currentTime {
+        font-size: 18px;
+    }
+}

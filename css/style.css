@@ -1,0 +1,191 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #616161; /* Matches the dark gray background in your screenshot */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main Login Card Container */
+.login-container {
+    background-color: #757575; /* Lighter gray card background */
+    width: 100%;
+    max-width: 420px;
+    padding: 40px 30px;
+    border-radius: 24px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Header Avatar Icon */
+.avatar-container {
+    background-color: #ffffff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+}
+
+.avatar-container img, .avatar-container i {
+    color: #1a73e8;
+    font-size: 40px;
+}
+
+/* Titles */
+h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-bottom: 25px;
+}
+
+/* Dropdown Selector */
+.role-select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 14px;
+    margin-bottom: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Input Fields Wrapper */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #757575;
+    font-size: 18px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    border-radius: 30px; /* Fully rounded pill inputs */
+    border: none;
+    background-color: #f5f5f5;
+    color: #333333;
+    font-size: 15px;
+    outline: none;
+}
+
+/* Password Toggle Icon */
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    left: auto !important;
+    cursor: pointer;
+    color: #757575;
+}
+
+/* Options (Remember Me & Forgot Password) */
+.options-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.forgot-pwd {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-pwd:hover {
+    text-decoration: underline;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #0066ff; /* Vibrant blue login button */
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s ease;
+}
+
+.login-btn:hover {
+    background-color: #0052cc;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 25px 0;
+}
+
+/* Demo Credentials Box */
+.demo-credentials {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.demo-title {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.cred-section {
+    margin-bottom: 15px;
+}
+
+.cred-role {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 2px;
+}
+
+/* Footer Copyright */
+.footer-text {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #cccccc;
+}
