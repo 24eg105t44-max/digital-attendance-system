@@ -1,16 +1,45 @@
 <div class="topbar">
 
-    <div>
-        <h1>Student Dashboard</h1>
-        <small id="welcomeText">Welcome</small>
+    <div class="student-profile">
+
+        <img
+            src="images/default-profile.png"
+            id="studentPhoto"
+            alt="Student Photo">
+
+        <div class="student-info">
+
+            <h2 id="studentName">Student Name</h2>
+
+            <p id="studentRoll">23CSE001</p>
+
+            <small id="welcomeText">
+                Welcome to Student Dashboard
+            </small>
+
+            <button id="changePhotoBtn">
+                <i class="fa-solid fa-camera"></i>
+                Change Photo
+            </button>
+
+            <input
+                type="file"
+                id="photoInput"
+                accept="image/*"
+                hidden>
+
+        </div>
+
     </div>
 
     <div class="date-time-card">
 
         <p>Today's Date</p>
+
         <h2 id="currentDate">--/--/----</h2>
 
         <p style="margin-top:20px;">Current Time</p>
+
         <h2 id="currentTime">--:--:--</h2>
 
     </div>
